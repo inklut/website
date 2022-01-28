@@ -1,3 +1,4 @@
+from distutils.log import debug
 from flask import Flask, render_template
 from datetime import datetime
 import os
@@ -31,4 +32,4 @@ def page_not_found(error):
     return render_template('components/errors/404.html', error=error), 404
 
 if __name__ == '__main__':
-    app.run(debug=True, port=os.getenv("PORT", default=5000))
+    app.run()
