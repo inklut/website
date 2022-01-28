@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}" />
 </head>
 <body>
-    {% block content %}{% endblock %}
+    <header>
+        {% include 'components/header.html' %}
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        {% include 'components/footer.html' %}
+    </footer>
 </body>
 </html>
