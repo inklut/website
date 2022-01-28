@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}" />
 </head>
 <body>
-    <main>
-        ¿ {{ error }} ?
-    </main>
+    <section>
+        <center class="text-gray-700">
+            <h1>No hemos logrado procesar su busqueda</h1>
+            <p>¿{{ error }}?</p>
+        </center>
+    </section>
 </body>
