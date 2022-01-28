@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='global.css') }}" />
 </head>
 <body>
-    <header>
+    <header class="text-gray-700">
         {% include 'components/header.html' %}
     </header>
-    <section>
+    <section class="text-gray-700">
         {% block content %}{% endblock %}
     </section>
-    <footer>
+    <footer class="text-gray-700">
         {% include 'components/footer.html' %}
     </footer>
 </body>

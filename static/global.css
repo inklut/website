@@ -504,6 +504,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 75%;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
 }
