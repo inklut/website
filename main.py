@@ -6,20 +6,23 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    title='Inklut'
-    return render_template('frontend.html', title=title, now=datetime.utcnow())
+    title = 'Inklut'
+    return render_template('pages/frontend.html', title=title, now=datetime.utcnow())
 
 @app.route('/multimedia')
 def multimedia():
-    return render_template('multimedia.html', now=datetime.utcnow())
+    title = 'Productos Digitales'
+    return render_template('pages/multimedia.html', title=title, now=datetime.utcnow())
 
 @app.route('/faq')
 def faq():
-    return render_template('faq.html', now=datetime.utcnow())
+    title = 'Preguntas Frecuentes'
+    return render_template('pages/faq.html', title=title, now=datetime.utcnow())
 
 @app.route('/contacto')
 def contacto():
-    return render_template('contacto.html', now=datetime.utcnow())
+    title = 'Contacto'
+    return render_template('pages/contacto.html', title=title, now=datetime.utcnow())
 
 # Error 404
 @app.route('/<error>')
