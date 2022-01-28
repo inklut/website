@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "twd":"npx tailwindcss -i ./main.css -o ./static/global.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inklut/website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inklut/website/issues"
+  },
+  "homepage": "https://github.com/inklut/website#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.17"
+  }
+}
