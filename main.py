@@ -1,10 +1,12 @@
-from distutils.log import debug
 from flask import Flask, render_template
 from datetime import datetime
 import os
 
 app = Flask(__name__)
 
+#   =========================================
+#                   FRONTEND
+#   =========================================
 @app.route('/')
 def index():
     title = 'Inklut'
